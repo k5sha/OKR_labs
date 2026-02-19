@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Молочні вироби — Натуральність та користь</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .dairy-page {
+            padding: 40px 0;
+        }
+
+        .content-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: var(--shadow);
+            margin-bottom: 40px;
+        }
+
+        .complex-data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .complex-data-table th,
+        .complex-data-table td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #edf2f7;
+        }
+
+        .header-main {
+            background-color: var(--primary) !important;
+            color: white !important;
+        }
+
+        .header-sub {
+            background-color: #f8fafc !important;
+            color: var(--dark);
+            font-weight: 600;
+        }
+
+        .row-highlight {
+            background-color: #f0fff4;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .price-label {
+            text-align: right;
+            font-weight: bold;
+            background-color: #f8fafc;
+        }
+
+        .dairy-img-wrapper {
+            margin: 20px 0;
+            border-radius: 20px;
+            overflow: hidden;
+            display: inline-block;
+            transition: var(--transition);
+        }
+
+        .dairy-img-wrapper:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo"><i class="fas fa-leaf"></i> Світ Продуктів</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link-item"><i class="fas fa-home"></i> Головна</a></li>
+                    <li><a href="#complex-table" class="nav-link-item"><i class="fas fa-table"></i> Характеристики</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container dairy-page">
+        <section class="hero">
+            <h1 id="main-header">🥛 Молочна продукція</h1>
+            <p>Тільки натуральне молоко від місцевих фермерів</p>
+        </section>
+
+        <div class="content-card">
+            <p>
+                Ми пропонуємо: <b>молоко</b>, <i>домашній сир</i>, густий йогурт та справжнє вершкове масло.
+                Наша продукція виготовляється без додавання консервантів, зберігаючи всі корисні вітаміни та
+                мікроелементи.
+            </p>
+
+            <h3>Наші продукти:</h3>
+            <a href="https://milkalliance.com.ua/uploads/gallery_photo/photo/0394/01.jpg" target="_blank"
+                class="dairy-img-wrapper">
+                <img src="https://milkalliance.com.ua/uploads/gallery_photo/photo/0394/01.jpg" width="300" height="200"
+                    alt="Молоко велике" style="object-fit: cover; display: block;">
+            </a>
+        </div>
+
+        <h2 id="complex-table" class="section-title"><i class="fas fa-info-circle"></i> Складна таблиця характеристик
+        </h2>
+
+        <table class="complex-data-table">
+            <caption>📊 Параметри свіжості та якості продукції</caption>
+            <colgroup>
+                <col style="width: 40%;">
+                <col style="width: 30%;">
+                <col style="width: 30%;">
+            </colgroup>
+            <thead>
+                <tr class="header-main">
+                    <th rowspan="2">Продукт</th>
+                    <th colspan="2" style="text-align: center;">Показники</th>
+                </tr>
+                <tr class="header-sub">
+                    <th>Жирність</th>
+                    <th>Термін зберігання</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Молоко фермерське</td>
+                    <td rowspan="2">3.2%</td>
+                    <td rowspan="2" class="row-highlight">7 діб</td>
+                </tr>
+                <tr>
+                    <td>Кефір</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="price-label">Середня ціна:</td>
+                    <td
+                        style="background-color: var(--accent); color: var(--dark); font-weight: bold; text-align: center;">
+                        45 грн</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p style="text-align: center; margin-top: 40px;">
+            <a href="#top" class="nav-btn" style="display: inline-flex; text-decoration: none;">
+                <i class="fas fa-arrow-up"></i> На початок
+            </a>
+        </p>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p><i class="fas fa-code"></i> Лабораторна робота №7 | Виконав Євтушенко Юрій</p>
+        </div>
+    </footer>
+</body>
+
+</html>

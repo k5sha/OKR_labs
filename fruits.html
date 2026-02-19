@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фрукти — Солодкий смак природи</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .fruits-page {
+            padding: 40px 0;
+        }
+
+        .content-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+        }
+
+        h1,
+        h3 {
+            color: #e67e22;
+        }
+
+        .fruit-list {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        .fruit-list>li {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: #d35400;
+        }
+
+        .nested-list {
+            margin-top: 8px;
+            padding-left: 30px;
+            color: var(--dark);
+        }
+
+        .nested-list li {
+            margin-bottom: 5px;
+            font-weight: 400;
+        }
+
+        .term-box {
+            background: #fff9e6;
+            padding: 20px;
+            border-left: 5px solid #f1c40f;
+            border-radius: 0 15px 15px 0;
+            margin-top: 30px;
+        }
+
+        dt {
+            color: #c0392b;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .fruit-circle {
+            border-radius: 50%;
+            border: 3px solid #f1c40f;
+            transition: var(--transition);
+        }
+
+        .fruit-circle:hover {
+            transform: rotate(15deg);
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo"><i class="fas fa-leaf"></i> Світ Продуктів</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link-item"><i class="fas fa-home"></i> Головна</a></li>
+                    <li><a href="dairy.html" class="nav-link-item"><i class="fas fa-cheese"></i> Молочні</a></li>
+                    <li><a href="vegetables.html" class="nav-link-item"><i class="fas fa-carrot"></i> Овочі</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container fruits-page">
+        <section class="hero">
+            <h1>🍎 Наші Фрукти</h1>
+            <p>Найкращий вибір сезону прямо з садів</p>
+        </section>
+
+        <div class="content-card">
+            <p style="font-size: 1.2em; color: #6e4200; margin-bottom: 30px;">
+                Найкращий вибір сезону: <b>соковиті яблука</b>, екзотичні банани та вітамінні апельсини.
+                <i>Відчуйте смак літа!</i>
+            </p>
+
+            <hr style="opacity: 0.1; margin: 30px 0;">
+
+            <h3>Порівняння розмірів зображення:</h3>
+            <p style="margin-top: 15px;">
+                Зменшене в 2 рази (відносно 100x100):<br><br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvbObpX6CYIDn11waczh-gzbiQcLbLlPgHww&s"
+                    width="50" height="50" alt="Маленьке яблуко" class="fruit-circle">
+            </p>
+
+            <h3 style="margin-top: 40px;"><i class="fas fa-th-list"></i> Класифікація за походженням:</h3>
+            <ol class="fruit-list">
+                <li><b>Цитрусові</b>
+                    <ul class="nested-list" style="list-style-type: circle;">
+                        <li>Лимон</li>
+                        <li>Грейпфрут</li>
+                    </ul>
+                </li>
+                <li><b>Кісточкові</b>
+                    <ul class="nested-list" style="list-style-type: disc;">
+                        <li>Персик</li>
+                        <li>Слива</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <div class="term-box">
+                <dl>
+                    <dt><i class="fas fa-microscope"></i> Термінологія: Фруктоза</dt>
+                    <dd>Природний цукор, що міститься у фруктах та меді. Надає плодам характерного солодкого смаку.</dd>
+                </dl>
+            </div>
+        </div>
+
+        <p style="text-align: center; margin-top: 40px;">
+            <a href="#top" class="nav-btn" style="display: inline-flex; text-decoration: none;">
+                <i class="fas fa-arrow-up"></i> На початок
+            </a>
+        </p>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p><i class="fas fa-code"></i> Лабораторна робота №7 | Виконав Євтушенко Юрій</p>
+        </div>
+    </footer>
+</body>
+
+</html>

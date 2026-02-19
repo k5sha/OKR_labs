@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Світ Продуктів — Premium Market</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="page-body">
+
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo"><i class="fas fa-leaf"></i> Світ Продуктів</div>
+            <nav id="action-menu">
+                <ul class="nav-links">
+                    <li><a href="dairy.html" class="nav-link-item"><i class="fas fa-cheese"></i> Молочні</a></li>
+                    <li><a href="fruits.html" class="nav-link-item"><i class="fas fa-apple-alt"></i> Фрукти</a></li>
+                    <li><a href="vegetables.html" class="nav-link-item"><i class="fas fa-carrot"></i> Овочі</a></li>
+                    
+                    <li><button class="nav-btn" data-method="showWelcome"><i class="fas fa-hand-sparkles"></i>
+                            Вітання</button></li>
+                    <li><button class="nav-btn" data-method="contactSupport"><i class="fas fa-headset"></i>
+                            Підтримка</button></li>
+                    <li><button class="theme-btn" data-method="toggleTheme"><i class="fas fa-moon"></i> Тема</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1 id="main-header" onmouseover="changeHeaderColor(this)">Смак природи у вас вдома</h1>
+            <p>Тільки добірні фермерські продукти з контролем якості на кожному етапі.</p>
+        </section>
+
+        <div class="promo-banner" id="special-promo-card">
+            <div class="badge"><i class="fas fa-star"></i> TOP SELLER</div>
+            <div class="banner-grid">
+                <div class="banner-img">
+                    <img src="https://s0.rbk.ru/v6_top_pics/media/img/0/78/756801770042780.webp"
+                        alt="Fresh Milk">
+                </div>
+                <div class="banner-info">
+                    <span class="category-tag">Молочні продукти</span>
+                    <h3>Фермерське молоко 3.2%</h3>
+                    <p>Свіжий надій сьогоднішнього ранку. Скляна тара, без ГМО.</p>
+                    <div class="price-row">
+                        <span class="current-price">48.00 ₴</span>
+                        <input type="button" data-counter value="0" class="counter-btn">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title"><i class="fas fa-shopping-basket"></i> Акційні пропозиції</h2>
+
+        <div class="product-grid" id="interactive-category-list">
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Apples.jpg"
+                        alt="Apples">
+                </div>
+                <div class="card-body">
+                    <h4>Яблуко червоне "Гала"</h4>
+                    <p>Хрусткі та солодкі, Вінниччина</p>
+                    <div class="card-footer">
+                        <span class="card-price">39.90 ₴</span>
+                        <input type="button" data-counter value="0" class="counter-btn">
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=400&q=80"
+                        alt="Bread">
+                </div>
+                <div class="card-body">
+                    <h4>Хліб Крафтовий</h4>
+                    <p>Пшеничний на заквасці, 450г</p>
+                    <div class="card-footer">
+                        <span class="card-price">32.00 ₴</span>
+                        <input type="button" data-counter value="0" class="counter-btn">
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="https://vesnodar.com.ua/image/cache/catalog/products/tomaty/rozovyye-shchechki/rozovyye-shchechki-500x500.jpg"
+                        alt="Vegetables">
+                </div>
+                <div class="card-body">
+                    <h4>Томати рожеві</h4>
+                    <p>Тепличні, дуже соковиті</p>
+                    <div class="card-footer">
+                        <span class="card-price">85.00 ₴</span>
+                        <input type="button" data-counter value="0" class="counter-btn">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p><i class="fas fa-code"></i> Лабораторна робота №7 | Виконав Євтушенко Юрій</p>
+            <div class="socials">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

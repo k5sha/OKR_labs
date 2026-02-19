@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свіжі Овочі — Каталог</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .veg-page {
+            padding: 40px 0;
+        }
+
+        .content-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: var(--shadow);
+            margin-bottom: 40px;
+        }
+
+        .veg-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .veg-table th {
+            background-color: var(--primary) !important;
+            color: white !important;
+            padding: 15px;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        .veg-table td {
+            padding: 15px;
+            border-bottom: 1px solid #edf2f7;
+            vertical-align: middle;
+        }
+
+        .zoom-img {
+            border-radius: 12px;
+            transition: var(--transition);
+            cursor: zoom-in;
+            object-fit: cover;
+            display: block;
+        }
+
+        .zoom-img:hover {
+            transform: scale(1.15);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .wiki-section {
+            margin-top: 50px;
+        }
+
+        .wiki-frame {
+            border: 2px solid #e2e8f0;
+            border-radius: 20px;
+            width: 100%;
+            height: 500px;
+            margin-top: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .info-badge {
+            margin: 20px 0;
+            padding: 20px;
+            background: #f0fff4;
+            border-left: 5px solid var(--primary);
+            border-radius: 0 15px 15px 0;
+            color: #276749;
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo"><i class="fas fa-leaf"></i> Світ Продуктів</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link-item"><i class="fas fa-home"></i> Головна</a></li>
+                    <li><a href="dairy.html" class="nav-link-item"><i class="fas fa-cheese"></i> Молочні</a></li>
+                    <li><a href="fruits.html" class="nav-link-item"><i class="fas fa-apple-alt"></i> Фрукти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container veg-page">
+        <section class="hero">
+            <h1 id="main-header">🥦 Наші Свіжі Овочі</h1>
+            <p>Вітаміни та здоров'я у кожному плоді</p>
+        </section>
+
+        <div class="content-card">
+            <div class="info-badge">
+                <p>
+                    Овочі — це основа здорового раціону. Ми пропонуємо лише <b>найсвіжіші плоди</b>, зібрані з любов'ю
+                    на локальних
+                    фермах. Кожен овоч у нашому каталозі — це <i>гарантія вітамінів</i>.
+                </p>
+            </div>
+
+            <h3 class="section-title" style="font-size: 1.5rem; margin-top: 30px;">
+                <i class="fas fa-clipboard-list"></i> Таблиця асортименту
+            </h3>
+
+            <table class="veg-table">
+                <caption><b>Детальний опис овочевої корзини</b></caption>
+                <thead>
+                    <tr>
+                        <th>Фото</th>
+                        <th>Корисні посилання</th>
+                        <th>Характеристики</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCSAzerbc9KJ41BoWlJwD5rftVIoUT9TsR9w&s"
+                                target="_blank">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCSAzerbc9KJ41BoWlJwD5rftVIoUT9TsR9w&s"
+                                    width="150" height="100" alt="Картопля" class="zoom-img">
+                            </a>
+                        </td>
+                        <td><a href="https://uk.wikipedia.org/wiki/Картопля" target="_blank"><i
+                                    class="fab fa-wikipedia-w"></i> Все про картоплю</a></td>
+                        <td>Молода картопля сорту "Беллароза". Смак, перевірений часом.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=1200"
+                                target="_blank">
+                                <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=300"
+                                    width="150" height="100" alt="Помідори" class="zoom-img">
+                            </a>
+                        </td>
+                        <td><a href="https://uk.wikipedia.org/wiki/Помідор" target="_blank"><i
+                                    class="fab fa-wikipedia-w"></i> Секрети томатів</a></td>
+                        <td>Помідори Черрі на гілці. Солодкі, соковиті та ароматні.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://agrarii-razom.com.ua/sites/default/files/byr/morkva_zvichayna.jpg"
+                                target="_blank">
+                                <img src="https://agrarii-razom.com.ua/sites/default/files/byr/morkva_zvichayna.jpg"
+                                    width="150" height="100" alt="Морква" class="zoom-img">
+                            </a>
+                        </td>
+                        <td><a href="https://uk.wikipedia.org/wiki/Морква" target="_blank"><i
+                                    class="fab fa-wikipedia-w"></i> Користь моркви</a></td>
+                        <td>Мита морква сорту "Каротель". Найвищий вміст каротину.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <section id="wiki-section" class="wiki-section">
+            <h3 class="section-title"><i class="fas fa-book-open"></i> Енциклопедія овочів</h3>
+            <p style="margin-bottom: 15px; opacity: 0.8;">Інформація завантажується безпосередньо з Вікіпедії:</p>
+            <iframe src="https://uk.wikipedia.org/wiki/Овочі" class="wiki-frame" title="Wiki vegetables">
+                Ваш браузер не підтримує фрейми.
+            </iframe>
+        </section>
+
+        <p style="text-align: center; margin-top: 40px;">
+            <a href="#top" class="nav-btn" style="display: inline-flex; text-decoration: none;">
+                <i class="fas fa-arrow-up"></i> На початок
+            </a>
+        </p>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p><i class="fas fa-code"></i> Лабораторна робота №7 | Виконав Євтушенко Юрій</p>
+        </div>
+    </footer>
+</body>
+
+</html>
